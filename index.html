@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .gallery-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .gallery {
+            display: inline-flex;
+        }
+        .gallery img {
+            width: 300px; /* Adjust as needed */
+            height: 200px; /* Adjust as needed */
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="placeholder1.jpg" alt="Image 1">
+            <img src="placeholder2.jpg" alt="Image 2">
+            <img src="placeholder3.jpg" alt="Image 3">
+            <img src="placeholder4.jpg" alt="Image 4">
+            <img src="placeholder5.jpg" alt="Image 5">
+        </div>
+    </div>
+</body>
+</html>
